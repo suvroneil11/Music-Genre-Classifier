@@ -11,8 +11,7 @@ others when it comes to music. Therefore, with this project, we aim to build Mus
 Classifier which will help with classifying songs into different genres(classes) so that people can continue discovering music according to their taste.
 
 ## Description of Dataset
-In this project, I will be following the dataset that is present on Kaggle. The file I will be using is named ("train.csv"). This file contains 17,996 rows and 17 columns. Few of the variables are 
-“Popularity, “danceability”, “energy”, “Class”, etc.
+In this project, I will be following the dataset that is present on Kaggle. The file I will be using is named ("train.csv"). This file contains 17,996 rows and 17 columns. Few of the variables are “Popularity, “danceability”, “energy”, “Class”, etc.
 
 ## Initial impressions of the data:
 *   Tracks had an average popularity score of 44.5
@@ -38,8 +37,7 @@ In this project, I will be following the dataset that is present on Kaggle. The 
 ## Model Selection
 - In this step I first started with few models to create a baseline model and get their performance on the processed dataset using different classifiers.
   I found the top two performing classifiers to be Balanced Random Forest Classifier and Balanaced Bagging Classifier with macro f1 scores of 0.605 and 0.598
-- As the datasets were unbalanced, I used sampling and weight adjusting to assess performance of the normal Random Forest and Bagging Classifier and see if it performed
-  better than than the balanced baseline models.
+- As the datasets were unbalanced, I used sampling and weight adjusting to assess performance of the normal Random Forest and Bagging Classifier and see if it performed better than than the balanced baseline models.
 - After adjusting weights, the performance of both the normal models improved as for random forest and bagging classfier I got macro f1 scores of 0.630 and 0.639 resepctively.
 - After sampling(using SMOTE-Tomek), the performance of both the normal models were better than the baseline models but not better than the models after weight adjusting as the macro f1 scores were 0.621 and 0.612.
 - Finally, I selected the Random Forest Classifier and Bagging Clasifiers as the final models after weight adjusting.
