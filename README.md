@@ -49,9 +49,8 @@ In this project, I will be following the dataset that is present on Kaggle. The 
 - Both the models performed well above average based on the classification report.
 
 ## Final Conclusion:
-- As this was a dataset with 11 classes which were highly imbalanced, I tried to implement different methods like, using re-sampling and weight adjusting, the cross validation,
-- using ensemble methods, hyperparameter tuning and feature engineering to handle this imbalance.
--   
+- As this was a dataset with 11 classes which were highly imbalanced, I tried to implement different methods like, using re-sampling and weight adjusting, the cross validation, using ensemble methods, hyperparameter tuning and feature engineering to handle this imbalance.
+
 - We can see that both the models had very similar performance.
 
 - Both the models are having hard time trying to classify Class 1 tracks.
@@ -59,6 +58,6 @@ In this project, I will be following the dataset that is present on Kaggle. The 
 - I would select the Bagging Classifier as the final model as it is able to classify Class 1 tracks better than the Random Forest Classifier and has comparatively better macro f1 score.
 
 ## Future Scope:
-- We can select the important features from the dataset and then retrain the models to see performance improvement.
+- We can select the important features from the dataset and then retrain the models on those particular set of features to see performance improvement.
 - As few of the variables are skewed, I tried applying few transformation methods, but the variables were not showing improvement in their distribution, so something can be done about that.
 - As there were lot of outliers, we can use different methods to remove outliers above a certain threshold and see the perfomance.
